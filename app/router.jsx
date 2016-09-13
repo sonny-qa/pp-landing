@@ -6,11 +6,16 @@ const MainLayout = require('./components/MainLayout')
 const Home = require('./components/Home')
 
 
-export default (
+const Routing = React.createClass({
+  render: function() {
+    return (
   <Router history={browserHistory}>
     <Route component={MainLayout} path="/">
       <IndexRoute component={Home}></IndexRoute>
     </Route>
   </Router>
-);
+    )
+  }
+})
 
+module.exports = Routing
