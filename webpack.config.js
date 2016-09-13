@@ -6,7 +6,7 @@ module.exports = {
     output: {
     	path: path.join(__dirname,'/public/js'),
         filename: "bundle.js",
-        sourceMapFilename: "public/js/bundle.map"
+        sourceMapFilename: "bundle.map"
     },
     resolve: {
     	extensions: ['','.js','.jsx','.json']
