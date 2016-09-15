@@ -12,6 +12,7 @@ const Routing = React.createClass({
   <Router history={browserHistory}>
     <Route component={MainLayout} path="/">
       <IndexRoute component={Home}></IndexRoute>
+
     </Route>
   </Router>
     )
