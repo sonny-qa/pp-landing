@@ -8,8 +8,14 @@ module.exports = {
         filename: "bundle.js",
         sourceMapFilename: "bundle.map"
     },
+    watch: true,
     resolve: {
     	extensions: ['','.js','.jsx','.json']
+    },
+    stats: {
+      colors: true,
+      reasons: true,
+      chunks: true
     },
     devtool: '#source-map',
     module: {
@@ -28,6 +34,10 @@ module.exports = {
       {
         test: /\.json$/,
         loader: 'json-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader" 
       }
     ]
    }

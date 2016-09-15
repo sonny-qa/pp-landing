@@ -1,13 +1,18 @@
 const React = require('react')
+const { PropTypes } = React
 
 const MainLayout = React.createClass({
-  render: function(){
+  render: function () {
     return (
-        <div >
+      <div >
           {this.props.children}
-        </div>
+      </div>
         )
   }
 })
+
+MainLayout.propTypes = {
+  children: PropTypes.node
+}
 
 module.exports = MainLayout

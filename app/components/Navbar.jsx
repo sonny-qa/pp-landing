@@ -1,14 +1,24 @@
 const React = require('react')
+import { Navbar } from 'react-bootstrap'
+require('../stylesheets/custom.css')
 
-const Navbar = React.createClass({
-  render: function(){
+
+const NavBar = React.createClass({
+  render: function () {
     return (
-        <div>
-          <h1>{this.props.brand}</h1>
-          <h3>{this.props.price}</h3>
-        </div>
+      <Navbar staticTop={true}>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="#">{this.props.brand}</a>
+          </Navbar.Brand>
+        </Navbar.Header>
+      </Navbar>
         )
   }
 })
-  
-module.exports = Navbar
+
+NavBar.propTypes = {
+  brand: React.PropTypes.string,
+}
+
+module.exports = NavBar
