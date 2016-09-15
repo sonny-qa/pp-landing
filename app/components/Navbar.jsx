@@ -1,22 +1,23 @@
 const React = require('react')
-import { Navbar } from 'react-bootstrap'
-require('../stylesheets/custom.css')
+const { Navbar } = require('react-bootstrap')
+const styles = require('../stylesheets/custom.css')
+const logo = require('../stylesheets/img/logo-main.png')
 
 
 const NavBar = React.createClass({
   render: function () {
     return (
-      <Navbar staticTop={true}>
+      <Navbar staticTop className={styles.navbar}>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">{this.props.brand}</a>
+            <a href="#"><img src={logo}/></a>
           </Navbar.Brand>
         </Navbar.Header>
       </Navbar>
         )
   }
 })
-
+ 
 NavBar.propTypes = {
   brand: React.PropTypes.string,
 }

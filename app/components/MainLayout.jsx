@@ -1,5 +1,5 @@
 const React = require('react')
-const { PropTypes } = React
+
 
 const MainLayout = React.createClass({
   render: function () {
@@ -12,7 +12,7 @@ const MainLayout = React.createClass({
 })
 
 MainLayout.propTypes = {
-  children: PropTypes.node
-}
+  children: React.PropTypes.node
+} 
 
 module.exports = MainLayout

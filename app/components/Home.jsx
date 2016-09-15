@@ -1,7 +1,7 @@
 const React = require('react')
 const NavBar = require('./NavBar')
 
-const brand = 'petroacademy'
+const brand = 'PETROACADEMY'
 const price = '$10'
 
 const Home = React.createClass({

@@ -1,4 +1,6 @@
 
 {
-  "extends": ["standard", "standard-react"]
+  "extends": ["standard", "standard-react", "es2015"],
+
+  "prop-types": [{ "ignore": "children"}]
 }

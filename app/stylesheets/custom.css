@@ -1,7 +1,13 @@
-.navbar-brand
-{
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    background-color: yellow;
+.navbar{
+  background: #2EBD59;
+}
+
+.navbar-header{
+   left: 50%;
+   position: relative;
+   transform: translateX(-50%);
+}
+
+.navbar-default .navbar-brand {
+    color: white;
 }
