@@ -15,7 +15,6 @@ const Home = React.createClass({
         <NavBar />
         <JumboTron />
         <Summary />
-        <img src={test}/>
       </div>
         )
   }

@@ -12,15 +12,31 @@
     color: white;
 }*/
 
-
-
-
 .jumbotron {
   text-align: center;
   height: 65vh;
   background-image:url('./img/pipes-main.jpg');
+  background-position: center;
+
+}
+
+.jumbotron h1 {
+  color: black;
+  font-family: "Open Sans";
+  transform: translateY(26%); 
+}
+
+.jumbotron h3 {
+  color: black;
+  font-family: "Open Sans";
+  transform: translateY(26%); 
 }
 
 .col-md-4 {
   text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: auto;
 }

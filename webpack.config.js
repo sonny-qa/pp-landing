@@ -7,7 +7,7 @@ module.exports = {
     	path: path.join(__dirname,'/public/js'),
         filename: "bundle.js",
         sourceMapFilename: "bundle.map",
-        publicPath: '/'
+        publicPath:"/js/"
     },
     watch: true,
     resolve: {
@@ -41,9 +41,11 @@ module.exports = {
         loader: "style-loader!css-loader" 
       },
       {
-        test: /\.(jpg|png)$/,
-        loader: 'url?limit=2500000',
-        include: path.join(__dirname, '/app/stylesheets/img')
+         test: /\.(jpe?g|png|gif)$/i,
+         loaders: [
+         'file?hash=sha512&digest=hex&name=[hash].[ext]',
+         'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+          ]
       },
       {
         test: /\.svg/, 
