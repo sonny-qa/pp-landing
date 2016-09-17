@@ -6,7 +6,8 @@ module.exports = {
     output: {
     	path: path.join(__dirname,'/public/js'),
         filename: "bundle.js",
-        sourceMapFilename: "bundle.map"
+        sourceMapFilename: "bundle.map",
+        publicPath: '/'
     },
     watch: true,
     resolve: {
@@ -41,9 +42,13 @@ module.exports = {
       },
       {
         test: /\.(jpg|png)$/,
-        loader: 'url?limit=25000',
+        loader: 'url?limit=2500000',
         include: path.join(__dirname, '/app/stylesheets/img')
-}
+      },
+      {
+        test: /\.svg/, 
+        loader: 'svg-url-loader'
+      }
     ]
    }
   }

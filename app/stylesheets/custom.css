@@ -1,13 +1,26 @@
-.navbar{
+/*.navbar{
   background: #2EBD59;
-}
+}*/
 
-.navbar-header{
+/*.navbar-header{
    left: 50%;
    position: relative;
    transform: translateX(-50%);
+}*/
+
+/*.navbar-default .navbar-brand {
+    color: white;
+}*/
+
+
+
+
+.jumbotron {
+  text-align: center;
+  height: 65vh;
+  background-image:url('./img/pipes-main.jpg');
 }
 
-.navbar-default .navbar-brand {
-    color: white;
+.col-md-4 {
+  text-align: center;
 }
